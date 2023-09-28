@@ -8,4 +8,10 @@ module.exports = {
   module: {
     rules: require('./webpack.rules'),
   },
+  resolve: {
+    alias: {
+      "sharp$": false,
+      "onnxruntime-node$": false,
+    }
+  }
 };
